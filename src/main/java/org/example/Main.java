@@ -2,7 +2,16 @@ package org.example;
 
 
 public class Main {
+static int mod = 26;
 
+
+    static int charToNum(char c) {
+        return c - 'A';
+    }
+
+    static char numToChar(int n) {
+        return (char) (n + 'A');
+    }
     static String encryptBlock(int[][] keyMatrix, int[] block) {
         int n = block.length;
         int[] result = new int[n];
@@ -39,7 +48,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
 
         }
     }
