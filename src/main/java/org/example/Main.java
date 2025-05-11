@@ -44,3 +44,13 @@ public class Main {
         }
     }
 }
+static int[][] readMatrix(Scanner sc, int n) {
+        int[][] matrix = new int[n][n];
+        System.out.println("Fut elementët e matrices (" + n + "x" + n + "):");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+        return matrix;
+    }
