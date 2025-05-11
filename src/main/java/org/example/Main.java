@@ -34,7 +34,7 @@ public class Main {
 
     static String encrypt(String input, int[][] keyMatrix, int n) {
         StringBuilder encrypted = new StringBuilder();
-       // input = input.toUpperCase().replaceAll("[^A-Z]", "");
+       input = input.toUpperCase().replaceAll("[^A-Z]", "");
         while (input.length() % n != 0) {
             input += "X";
         }
