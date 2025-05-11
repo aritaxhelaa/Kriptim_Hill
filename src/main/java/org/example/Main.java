@@ -34,7 +34,7 @@ public class Main {
 
     static String encrypt(String input, int[][] keyMatrix, int n) {
         StringBuilder encrypted = new StringBuilder();
-        input = input.toUpperCase().replaceAll("[^A-Z]", "");
+       // input = input.toUpperCase().replaceAll("[^A-Z]", "");
         while (input.length() % n != 0) {
             input += "X";
         }
@@ -76,9 +76,15 @@ public class Main {
 
         int[][] keyMatrix = readMatrix(sc, n);
         sc.nextLine();
+        String input;
 
-        System.out.print("Shkruaj tekstin për kriptim: ");
-        String input = sc.nextLine();
+        do {
+            System.out.print("Shkruaj tekstin për kriptim (vetëm shkronja A-Z): ");
+            input = sc.nextLine().toUpperCase(); // konverton në shkronja të mëdha
+            if (!input.matches("[A-Z]+")) {
+                System.out.println("Gabim! Teksti mund të përmbajë vetëm shkronja nga A deri në Z.");
+            }
+        } while (!input.matches("[A-Z]+"));
 
         String encrypted = encrypt(input, keyMatrix, n);
         System.out.println("Teksti i koduar: " + encrypted);
