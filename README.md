@@ -37,6 +37,16 @@ Teksti i vlefshëm kriptohet duke përdorur metodën encrypt, e cila aplikon alg
 Shfaqja e rezultatit:
 Teksti i koduar (i kriptuar) shfaqet në ekran.
 
+Tek metoda readMatrix
+Funksioni readMatrix përdoret për të lexuar një matricë katrore me madhësi n x n nga tastiera. Fillimisht, krijohet një matricë bosh int[][] matrix = new int[n][n] që do të mbushet me vlerat qe jep përdoruesi. Pastaj shfaqet një mesazh në ekran që kërkon nga përdoruesi të jap elementët e matricës. Me anë të dy cikleve for, njëri për rreshtat dhe tjetri për kolonat, lexohen të gjitha vlerat një nga një duke përdorur sc.nextInt() dhe vendosen në pozicionin përkatës të matricës matrix[i][j]. Pasi të jenë lexuar të gjitha vlerat, matrica e plotësuar kthehet si rezultat i funksionit. 
+
+Metoda Main
+Ky kod ka të bëjë me strukturën për një enkriptim me algoritmin Hill Cipher, ku fillimisht caktohet moduli 26 për të përfaqësuar shkronjat e alfabetit anglez, funksioni charToNum kthen një shkronjë të madhe në numrin përkatës nga 0 deri në 25, ndërsa numToChar kthen një numër nga 0 në 25 në shkronjën përkatëse të alfabetit, dhe funksionet encryptBlock dhe encrypt janë të shpallura por të papërfunduara, ku i pari do të bëjë shumëzimin e një blloku të tekstit (i shndërruar në numra) me matricën çelës për të krijuar tekstin e koduar, ndërsa i dyti do të përpunojë tekstin e plotë duke e ndarë në blloqe të vegjël dhe duke thirrur funksionin encryptBlock për secilin bllok, dhe më në fund funksioni main është i zbrazët, që do të thotë se aktualisht programi nuk kryen ndonjë funksion kur ekzekutohet.
+
+
+
+
+
 
 
 
