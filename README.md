@@ -46,6 +46,11 @@ Ky kod ka të bëjë me strukturën për një enkriptim me algoritmin Hill Ciphe
 Metoda encryptBlock
 Kjo metodë përbën bërthamën e procesit të enkriptimit në algoritmin Hill Cipher, duke realizuar transformimin matematikor të një blloku karakteresh
 i cili më parë është shndërruar në vektor numerik, përmes shumëzimit me matricën kyç.
+Qëllimi është të kryejë shumëzimin e një blloku të vetëm (block) me matricën celës (keyMatrix) dhe të kthejë rezultatin si varg karakteresh të koduara.
+Fillimisht inicializohet një vektor result i cili ruan rezultatet e shumëzimit,ku për secilin rresht të keyMatrix,
+kryhet shumëzimi me block.Dimensionet e matricës keyMatrix dhe gjatësia e block duhet të jenë të barabarta(n x n).
+Vlerat pastaj modulohen secila dhe për të konvertuar numrat që na kanë dalur si rezultat, e përdorim
+metodën numToChar. Si përfundim vargu i krijuar do shfaqet si tekst i enkriptuar.
 
 
 
