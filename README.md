@@ -43,7 +43,9 @@ Funksioni readMatrix përdoret për të lexuar një matricë katrore me madhësi
 Metoda Main
 Ky kod ka të bëjë me strukturën për një enkriptim me algoritmin Hill Cipher, ku fillimisht caktohet moduli 26 për të përfaqësuar shkronjat e alfabetit anglez, funksioni charToNum kthen një shkronjë të madhe në numrin përkatës nga 0 deri në 25, ndërsa numToChar kthen një numër nga 0 në 25 në shkronjën përkatëse të alfabetit, dhe funksionet encryptBlock dhe encrypt janë të shpallura por të papërfunduara, ku i pari do të bëjë shumëzimin e një blloku të tekstit (i shndërruar në numra) me matricën çelës për të krijuar tekstin e koduar, ndërsa i dyti do të përpunojë tekstin e plotë duke e ndarë në blloqe të vegjël dhe duke thirrur funksionin encryptBlock për secilin bllok, dhe më në fund funksioni main është i zbrazët, që do të thotë se aktualisht programi nuk kryen ndonjë funksion kur ekzekutohet.
 
-
+Metoda encryptBlock
+Kjo metodë përbën bërthamën e procesit të enkriptimit në algoritmin Hill Cipher, duke realizuar transformimin matematikor të një blloku karakteresh
+i cili më parë është shndërruar në vektor numerik, përmes shumëzimit me matricën kyç.
 
 
 
